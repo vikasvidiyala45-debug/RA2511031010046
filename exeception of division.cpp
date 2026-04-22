@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+
+    try
+    {
+        cout << "Enter first number: ";
+        cin >> a;
+
+        cout << "Enter second number: ";
+        cin >> b;
+
+        if (b == 0)
+            throw b;
+
+        cout << "Result = " << a / b << endl;
+    }
+    catch (int)
+    {
+        cout << "Error: Division by zero is not allowed." << endl;
+    }
+
+    return 0;
+}
